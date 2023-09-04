@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* If you set box-sizing: border-box; on an element, padding and border are included in the width and height */
+}
+
+/* Variables */
+:root {
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --padding-inline-section: 20px;
+}
+
+/* Styling text */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-text-color);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* ul {
+    list-style: none;
+} */
+
+/* utility-classes */
+
+.small-bold-text {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* This code is for adding the left and right margin throughout the website */
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+    /* margin-inline: auto; - It sets the container div in center */
+    padding-inline: var(--padding-inline-section);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    /* align-items: center; - It sets the elements of this div in vertically center */
+}
+/* Now we just have to add flex in the div which we want as flex */
+
+.hover-link {
+    color: var(--primary-text-color);
+}
+
+.hover-link:hover {
+    color: var(--accent-color);
+    transition: 0.2s ease-out;
+}
+
+.primary-button {
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: #fff !important;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease-out;
+}
+
+.secondary-button {
+    border: 0.5px solid var(--accent-color);
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 700;
+    color: var(--primary-text-color) !important;
+    transition: 0.2s ease-out;
+}
+
+.primary-button:hover {
+    background-color: var(--accent-color-dark);
+}
+
+.secondary-button:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color) !important;
+}
+
+
+
+/* top banner */
+
+.top-banner {
+    background-image: url("./assests/asset\ 32.png");
+    background-color: #4fb3d4;
+    background-size: 300px;
+}
+
+.banner-text {
+    color: #fff;
+    padding: 15px 30px;
+    /* it sets the text in vertically center */
+    text-align: center;
+    /* it sets the text in horizontally center */
+}
+
+/* nav bar */
+
+.main-nav {
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.company-logo img {
+    width: 200px;
+}
+
+.nav-links {
+    flex-basis: 730px;
+}
+
+.nav-links ul {
+    justify-content: end;
+    gap: 40px; 
+    /* This gives the gap between the elements of the div which sets as flex*/
+}
+
+
+/* Hero Section */
+.hero-section-div {
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero-section-text {
+    max-width: 40vw;
+    margin-top: 90px;
+}
+
+.hero-section-text h1 {
+    margin-bottom: 10px;
+}
+
+.hero-section-text p {
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+
+.hero-section-img img {
+    width: 568px;
+    margin-top: 30px;
+}
+
+/* companies section */
+.companies-section-div {
+    margin-top: 30px;
+}
+
+.companies-section-div h3 {
+    font-weight: 500;
+    font-size: medium;
+    text-align: center;
+}
+
+.companies-section-images {
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.companies-section-images img {
+    max-height: 46px;
+    max-width: 100%;
+}
+
+/* features-section */
+
+.features-section {
+    padding: 80px var(--padding-inline-section) 0;
+    background-image: url("./assests/asset\ 34.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 55%;
+    margin-bottom: 100px;
+}
+
+.features-header {
+    flex-direction: column;
+}
+
+.features-header h2 {
+    font-weight: 500;
+    text-align: center;
+}
+
+.features-header a {
+    margin-top: 10px;
+}
+
+.features-area {
+    flex-wrap: wrap;
+    /* This has made 3 cards per line */
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.feature-card-img {
+    width: 40px;
+    height: 40px;
+}
+
+.features-card {
+    flex-direction: column;
+    gap: 15px;
+    max-width: 30%;
+    /* This has made 3 cards per line */
+}
+
+.features-card h3 {
+    font-weight: 550;
+}
+
+.features-card p {
+    text-align: center;
+}
+
+/* big-feature-section */
+
+.big-feature-section {
+    padding: 30px var(--padding-inline-section);
+}
+
+.big-feature-section-div {
+    justify-content: space-between;
+    gap: 100px;
+    align-items: flex-start;
+}
+
+
+/* example-section */
+
+.example-section-div {
+    gap: 15px;
+}
+
+.example-section-photos-div {
+    gap: 20px;
+}
+
+.example-section-photos-div img {
+    width: 100%;
+}
+
+/* cta-section */
+
+.cta-section {
+    width: 100%;
+    height: 100vh;
+    background-color: #183b54;
+    margin-top: 40px;
+}
+
+.cta-section-div h2 {
+    color: #fff;
+}
+
+.cta-section-div p {
+    margin-top: 20px;
+    color: #b9cde4;
+}
+
+.cta-list-1, .cta-list-2 {
+    color: #b9cde4;
+}
+
+ul {
+    margin-left: 15px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.cta-section-div a {
+    margin-top: 20px;
+}
+
+.cta-secondary-button {
+    color: #b9cde4;
+}
+
+/* free-trail */
+
+.free-trail {
+    margin-top: 100px;
+}
+
+.free-trail-div {
+    flex-direction: column;
+    gap: 30px;
+}
+
+.free-trail-p {
+    width: 40%;
+    text-align: center;
+}
+
+/* footer */
+.footer-div {
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.footer-div h3 {
+    margin-bottom: 20px;
+}
+
+.footer-div ul {
+    margin-left: 0;
+}
+
+.footer-div li {
+    color: #577592;
+}
+
+footer {
+    margin-top: 60px;
+    background-color: #ebf2fa;
+    padding: 60px 0;
+}
+
+/* sub-footer  */
+.subfooter {
+    padding: 20px 0;
+    background-color: #b9cde4;
+}
+
+.subfooter-div {
+    justify-content: center;
+    gap: 150px;
+}
+
+.subfooter-div p {
+    font-size: 16px;
+}
+
+.subfooter-text-flex {
+    gap: 20px;
+}
+
+.subfooter-img-flex {
+    gap: 20px;
+}
+
+.subfooter-img-flex img {
+    width: 10%;
+}
